@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta tags base per SEO -->
+    <title>il Tafano — cronache, versi e riflessioni</title>
+    <meta
+      name="description"
+      content="Magazine culturale minimalista: articoli di cronaca, politica e società, pubblicazioni poetiche e filosofiche, contenuti in evidenza da tutto il mondo."
+    />
+    <meta
+      name="keywords"
+      content="magazine, giornale, cultura, cronaca, poesia, filosofia, riflessioni, articoli"
+    />
+    <meta name="author" content="il Tafano" />
+
+    <!-- Open Graph per social sharing -->
+    <meta property="og:site_name" content="il Tafano" />
+    <meta
+      property="og:title"
+      content="il Tafano — cronache, versi e riflessioni"
+    />
+    <meta
+      property="og:description"
+      content="Magazine culturale minimalista: articoli di cronaca, politica e società, pubblicazioni poetiche e filosofiche, contenuti in evidenza da tutto il mondo."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iltafano.it/" />
+    <meta property="og:image" content="https://iltafano.it/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="il Tafano — cronache, versi e riflessioni"
+    />
+    <meta
+      name="twitter:description"
+      content="Magazine culturale minimalista: articoli di cronaca, politica e società, pubblicazioni poetiche e filosofiche, contenuti in evidenza da tutto il mondo."
+    />
+    <meta name="twitter:image" content="https://iltafano.it/og-image.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://iltafano.it/" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"il Tafano","url":"https://iltafano.it","description":"Magazine culturale minimalista: articoli di cronaca, politica e societa, pubblicazioni poetiche e filosofiche, contenuti in evidenza da tutto il mondo.","publisher":{"@type":"Organization","name":"il Tafano","url":"https://iltafano.it","logo":"https://iltafano.it/og-image.jpg"}}</script>
+  </head>
+  <body>
+    <!-- 
+        HEADER: contiene logo centrale e pulsante menu hamburger 
+        È sticky, cioè rimane visibile durante lo scroll
+    -->
+    <header class="header" id="header">
+      <div class="header-spacer"></div>
+
+      <div class="header-center">
+        <a href="index.html" class="logo-link">
+          <h1 class="logo">il <span>Tafano</span></h1>
+        </a>
+        <p class="tagline">cronache, versi e riflessioni</p>
+      </div>
+
+      <div class="header-right">
+        <button class="menu-btn" id="menuBtn" aria-label="Apri menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 
+        SUB-HEADER: mostra data e ora corrente 
+        Si aggiorna automaticamente ogni minuto
+    -->
+    <div class="sub-header" id="subHeader">
+      <p class="date-time">
+        venerdì, 13 febbraio 2026<span class="dash"> — </span
+        ><br class="mobile-break" />aggiornato alle 20:30
+      </p>
+    </div>
+
+    <!-- 
+        OVERLAY: sfondo scuro quando il menu è aperto 
+        Cliccandolo si chiude il menu
+    -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- 
+        SIDEBAR MENU: navigation laterale che scorre da destra 
+        Contiene i link principali del sito
+    -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <button class="close-btn" id="closeBtn" aria-label="Chiudi menu">
+          ×
+        </button>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Identità</a></li>
+        <li><a href="in-evidenza.html">In Evidenza</a></li>
+        <li><a href="articoli.html">Archivio</a></li>
+        <li><a href="pubblicazioni.html">Pubblicazioni</a></li>
+        <li><a href="redazione.html">Redazione</a></li>
+        <li><a href="contatti">Contatti</a></li>
+      </ul>
+    </nav>
+
+    <!-- 
+        MAIN: contenitore del contenuto dinamico 
+        Viene popolato via JavaScript in base alla route corrente
+    -->
+    <main class="main" id="main">
+      <div class="page-container">
+        <div class="intro-text">
+          <h2>Manifesto</h2>
+          <p>
+            ...οἷον δή τινι ἵππῳ μεγάλῳ μὲν καὶ γενναίῳ, ὑπὸ μεγέθους δὲ
+            νωθεστέρῳ καὶ δεομένῳ ἐγείρεσθαι ὑπὸ μύωπός τινος, οἷον δή με ὁ θεὸς
+            τῇ πόλει τινὰ προστεθηκέναι ἔοικα, τοιοῦτόν με ἐγὼ ἐμαυτὸν ἐγείρων
+            καὶ πείθων καὶ ὀνειδίζων ἕκαστον ὑμῶν οὐδὲν παύομαι τὴν ἡμέραν ὅλην
+            πανταχοῦ προσκαθίζων.
+          </p>
+          <p>
+            <em>
+              ...simile a un cavallo grande e nobile, ma un po' lento a causa
+              della grandezza e bisognoso di esser destato da un qualche tafano:
+              proprio cosi, credo che il dio mi abbia posto come una tale
+              creatura sopra la citta, che vi svegli, vi persuada e vi
+              rimproveri tutti, senza sosta, sedendomi ovunque accanto a voi per
+              tutto il giorno. </em
+            ><br /><br /><em>-Platone, Apologia di Socrate</em>
+          </p>
+          <hr />
+          <br />
+          <p>
+            Il Tafano è un giornale di controcultura crepuscolare, nato per dare
+            voce a chi ha qualcosa da dire. Non siamo interessati alla quantità
+            o alla viralità, ma alla sostanza e all'autenticità. Il nostro
+            obiettivo è creare uno spazio dove le idee possano volare libere,
+            senza filtri o compromessi.
+          </p>
+          <p>
+            Crediamo nel potere della cultura di trasformare le persone e la
+            società, e vogliamo essere un piccolo ma costante stimolo in questa
+            direzione. Non ci interessa seguire le mode o rincorrere i trend, ma
+            piuttosto coltivare un dialogo sincero e profondo con i nostri
+            lettori.
+          </p>
+          <p>
+            Il Tafano è un progetto indipendente e controtendente, senza padrini
+            politici o padroni economici.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- 
+        FOOTER: copyright e informazioni finali 
+    -->
+    <footer class="footer">
+      <p>© 2026 ilTafano — Tutti i diritti riservati</p>
+    </footer>
+
+    <!-- Script principali: ordine importante per le dipendenze -->
+    <script src="./js/config.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/components.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
