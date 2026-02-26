@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta tags base per SEO -->
+    
     <title>Pagina non trovata — il Tafano</title>
     <meta
       name="description"
@@ -12,16 +12,13 @@
     />
     <meta name="robots" content="noindex, nofollow" />
 
-    <!-- Favicon -->
+    
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- 
-        HEADER: contiene logo centrale e pulsante menu hamburger 
-        È sticky, cioè rimane visibile durante lo scroll
-    -->
+    
     <header class="header" id="header">
       <div class="header-spacer"></div>
 
@@ -40,30 +37,21 @@
         </button>
       </div>
 
-      <!-- Progress bar di scroll -->
+      
       <div id="scrollProgress" class="scroll-progress"></div>
     </header>
 
-    <!-- 
-        SUB-HEADER: mostra data e ora corrente 
-        Si aggiorna automaticamente ogni minuto
-    -->
+    
     <div class="sub-header" id="subHeader">
       <p class="date-time">
         <span id="currentDateTime"></span>
       </p>
     </div>
 
-    <!-- 
-        OVERLAY: sfondo scuro quando il menu è aperto 
-        Cliccandolo si chiude il menu
-    -->
+    
     <div class="overlay" id="overlay"></div>
 
-    <!-- 
-        SIDEBAR MENU: navigation laterale che scorre da destra 
-        Contiene i link principali del sito
-    -->
+    
     <nav class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <button class="close-btn" id="closeBtn" aria-label="Chiudi menu">
@@ -80,9 +68,7 @@
       </ul>
     </nav>
 
-    <!-- 
-        MAIN: contenitore del contenuto 
-    -->
+    
     <main class="main" id="main">
       <div class="page-container">
         <div class="intro-text" style="text-align: center; padding: 60px 20px">
@@ -105,14 +91,12 @@
       </div>
     </main>
 
-    <!-- 
-        FOOTER: copyright e informazioni finali 
-    -->
+    
     <footer class="footer">
       <p>© 2026 ilTafano — Tutti i diritti riservati</p>
     </footer>
 
-    <!-- Script principali -->
+    
     <script src="./js/config.js"></script>
     <script src="./js/components.js"></script>
     <script>
@@ -140,7 +124,7 @@
       updateDateTime();
       setInterval(updateDateTime, 60000); // Aggiorna ogni minuto
     </script>
-      <!-- Analytics -->
+      
     <script data-goatcounter="https://tafano.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>

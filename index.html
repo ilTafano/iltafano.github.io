@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta tags base per SEO -->
+    
     <title>il Tafano — cronache, versi e riflessioni</title>
     <meta
       name="description"
@@ -16,7 +16,7 @@
     />
     <meta name="author" content="il Tafano" />
 
-    <!-- Open Graph per social sharing -->
+    
     <meta property="og:site_name" content="il Tafano" />
     <meta
       property="og:title"
@@ -30,7 +30,7 @@
     <meta property="og:url" content="https://iltafano.it/" />
     <meta property="og:image" content="https://iltafano.it/og-image.jpg" />
 
-    <!-- Twitter Card -->
+    
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -42,10 +42,10 @@
     />
     <meta name="twitter:image" content="https://iltafano.it/og-image.jpg" />
 
-    <!-- Canonical URL -->
+    
     <link rel="canonical" href="https://iltafano.it/" />
 
-    <!-- Favicon -->
+    
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="./favicon.ico" />
 
@@ -53,10 +53,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"il Tafano","url":"https://iltafano.it","description":"Il Tafano è uno spazio di controcultura crepuscolare, indipendente, senza padrini politici o padroni economici, nato per dare voce alle idee libere da preconcetti, filtri, censure o bavagli.","publisher":{"@type":"Organization","name":"il Tafano","url":"https://iltafano.it","logo":"https://iltafano.it/og-image.jpg"}}</script>
   </head>
   <body>
-    <!-- 
-        HEADER: contiene logo centrale e pulsante menu hamburger 
-        È sticky, cioè rimane visibile durante lo scroll
-    -->
+    
     <header class="header" id="header">
       <div class="header-spacer"></div>
 
@@ -76,10 +73,7 @@
       </div>
     </header>
 
-    <!-- 
-        SUB-HEADER: mostra data e ora corrente 
-        Si aggiorna automaticamente ogni minuto
-    -->
+    
     <div class="sub-header" id="subHeader">
       <p class="date-time">
         venerdì, 13 febbraio 2026<span class="dash"> — </span
@@ -87,16 +81,10 @@
       </p>
     </div>
 
-    <!-- 
-        OVERLAY: sfondo scuro quando il menu è aperto 
-        Cliccandolo si chiude il menu
-    -->
+    
     <div class="overlay" id="overlay"></div>
 
-    <!-- 
-        SIDEBAR MENU: navigation laterale che scorre da destra 
-        Contiene i link principali del sito
-    -->
+    
     <nav class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <button class="close-btn" id="closeBtn" aria-label="Chiudi menu">
@@ -113,10 +101,7 @@
       </ul>
     </nav>
 
-    <!-- 
-        MAIN: contenitore del contenuto dinamico 
-        Viene popolato via JavaScript in base alla route corrente
-    -->
+    
     <main class="main" id="main">
       <div class="page-container">
         <div class="intro-text">
@@ -191,19 +176,17 @@
       </div>
     </main>
 
-    <!-- 
-        FOOTER: copyright e informazioni finali 
-    -->
+    
     <footer class="footer">
       <p>© 2026 ilTafano — Tutti i diritti riservati</p>
     </footer>
 
-    <!-- Script principali: ordine importante per le dipendenze -->
+    
     <script src="./js/config.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/components.js"></script>
     <script src="./js/main.js"></script>
-      <!-- Analytics -->
+      
     <script data-goatcounter="https://tafano.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>
